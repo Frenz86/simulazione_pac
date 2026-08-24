@@ -1,0 +1,5 @@
+uv sync
+
+.venv\Scripts\activate
+
+uv run streamlit run app.py

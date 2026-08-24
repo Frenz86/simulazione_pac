@@ -1,0 +1,192 @@
+/* ===== SIMU_PAC — stile custom per replicare la UI originale ===== */
+
+html, body, [class*="css"] {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.block-container {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    max-width: 1400px;
+}
+
+/* ---------- Home button ---------- */
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    line-height: 1.3;
+    background-color: #2563eb;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.45rem 1rem;
+    border-radius: 8px;
+    text-decoration: none !important;
+    margin-bottom: 1.2rem;
+    overflow: visible;
+}
+.home-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ---------- Titolo e sottotitolo ---------- */
+.app-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.25;
+    margin: 0.2rem 0 1.2rem 0;
+}
+
+.app-subtitle {
+    text-align: center;
+    font-size: 1.08rem;
+    color: #1f2937;
+    max-width: 1150px;
+    margin: 0 auto 1.8rem auto;
+    line-height: 1.5;
+}
+
+/* ---------- Etichette dei campi ---------- */
+.field-label {
+    font-size: 0.95rem;
+    color: #111827;
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+}
+
+.slider-value {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-top: -0.6rem;
+}
+
+/* ---------- Input numerici ---------- */
+div[data-testid="stNumberInput"] input,
+div[data-testid="stTextInput"] input {
+    border-radius: 8px !important;
+    border: 1px solid #d1d5db !important;
+    padding: 0.55rem 0.7rem !important;
+    font-size: 1rem !important;
+    background-color: #ffffff !important;
+}
+
+div[data-testid="stTextInput"] input:disabled {
+    background-color: #eef0f3 !important;
+    color: #374151 !important;
+    -webkit-text-fill-color: #374151 !important;
+    opacity: 1 !important;
+}
+
+/* ---------- Slider blu sottile ---------- */
+div[data-testid="stSlider"] > div > div > div > div {
+    background-color: #2563eb !important;
+}
+div[data-testid="stSlider"] [role="slider"] {
+    background-color: #2563eb !important;
+    border: 2px solid #2563eb !important;
+    box-shadow: none !important;
+}
+div[data-testid="stSlider"] > div > div > div {
+    background-color: #d1d5db !important;
+}
+
+/* ---------- Bottone Simula ---------- */
+div[data-testid="stButton"] > button {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    border: none;
+    padding: 0.65rem 1rem;
+    width: 100%;
+    transition: background-color 0.15s ease-in-out;
+}
+div[data-testid="stButton"] > button:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+div[data-testid="stButton"] > button:focus {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.35);
+}
+
+/* ---------- Statistiche risultato ---------- */
+.result-table {
+    font-size: 1rem;
+    color: #111827;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-top: 0.3rem;
+}
+.result-table td {
+    padding: 0.15rem 0 0.15rem 1.2rem;
+    white-space: nowrap;
+    text-align: left;
+}
+.result-table td:first-child {
+    padding-left: 0;
+}
+.result-table b {
+    font-weight: 700;
+}
+
+/* ---------- Box informativo ---------- */
+.info-box {
+    background-color: #eaf6fb;
+    border: 1px solid #a9d9ea;
+    border-radius: 10px;
+    padding: 1.1rem 1.4rem;
+    margin: 1.4rem 0 1.6rem 0;
+}
+.info-box h4 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #111827;
+}
+.info-box p {
+    margin: 0.3rem 0;
+    font-size: 0.98rem;
+    color: #1f2937;
+    line-height: 1.5;
+}
+.info-box ul {
+    margin: 0.3rem 0 0.5rem 0;
+    padding-left: 1.3rem;
+}
+.info-box li {
+    font-size: 0.98rem;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+    line-height: 1.5;
+}
+.info-box .implicazioni {
+    font-size: 0.86rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* ---------- Titoli grafici ---------- */
+.chart-title {
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.3rem;
+}
+
+/* ---------- Testo di chiusura ---------- */
+.footer-note {
+    font-size: 0.95rem;
+    color: #374151;
+    margin-top: 1.2rem;
+    line-height: 1.5;
+}
+.footer-note.moral {
+    margin-top: 0.6rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.9rem;
+}
