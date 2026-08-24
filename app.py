@@ -131,7 +131,7 @@ def main():
     load_css("style.css")
 
     st.markdown(
-        '<div class="app-title">PS VS PAC. Simulazione PAC con metodo montecarlo e analisi dei profili '
+        '<div class="app-title">PIC VS PAC. Simulazione PAC con metodo montecarlo e analisi dei profili '
         'di rendimento nei diversi casi</div>',
         unsafe_allow_html=True,
     )
